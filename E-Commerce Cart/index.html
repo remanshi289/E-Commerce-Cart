@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>E-commerce Cart</h1>
+    
+    <!-- Display Products -->
+    <div id="product-list">
+        <div class="product" id="Laptop">
+            <h3>Laptop</h3>
+            <p>Price: $1000</p>
+            <p>Available: Yes</p>
+            <button onclick="addToCart('Laptop')">Add to Cart</button>
+            <input type="number" id="Laptop-quantity" value="1" min="1">
+        </div>
+        <div class="product" id="Headphones">
+            <h3>Headphones</h3>
+            <p>Price: $50</p>
+            <p>Available: Yes</p>
+            <button onclick="addToCart('Headphones')">Add to Cart</button>
+            <input type="number" id="Headphones-quantity" value="1" min="1">
+        </div>
+        <div class="product" id="Computer">
+            <h3>Computer</h3>
+            <p>Price: $800</p>
+            <p>Available: Yes</p>
+            <button onclick="addToCart('Computer')">Add to Cart</button>
+            <input type="number" id="Computer-quantity" value="1" min="1">
+        </div>
+        <div class="product" id="SmartPhone">
+            <h3>Smart Phone</h3>
+            <p>Price: $400</p>
+            <p>Available: Yes</p>
+            <button onclick="addToCart('SmartPhone')">Add to Cart</button>
+            <input type="number" id="SmartPhone-quantity" value="1" min="1">
+        </div>
+    </div>
+
+    <!-- Cart Section -->
+    <div id="cart" class="cart">
+        <h2>Your Cart:</h2>
+        <ul id="cart-items">
+        </ul>
+        <p id="cart-total">Your total bill is $0.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
